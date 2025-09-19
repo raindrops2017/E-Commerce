@@ -22,7 +22,7 @@ export async function getProductsByCategoryAPi(categoryId: string)
     const response =
         await fetch(`https://ecommerce.routemisr.com/api/v1/products?category[in]=${categoryId}`);
     const products = await response.json();
-    return products;
+    return products.data;
 }
 
 export async function getProductsBybrandsAPi(brandId: string)
