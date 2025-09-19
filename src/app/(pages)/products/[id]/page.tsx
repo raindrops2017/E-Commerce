@@ -66,8 +66,8 @@ export default async function ProductDetailsPage({ params }: ProductDetailsProps
     </section>
 
     <section className='container my-10 mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
-      {relatedproducts?.data?.length &&
-        relatedproducts?.data.map((product) => (
+      {relatedproducts?.length &&
+        relatedproducts?.map((product) => (
           <Card key={product._id} className=" flex flex-col -px-2">
             {/* <Link href={`/products/${product._id}`}> */}
             <Image
