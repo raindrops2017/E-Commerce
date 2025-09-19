@@ -5,7 +5,7 @@ import { useState } from 'react';
 import toast from 'react-hot-toast';
 
 export default function WishlistItemComponent({ id }: { id: string }) {
-  const [wishlist, setWishlist] = useState<any[]>([]);
+  const [wishlist, setWishlist] = useState<unknown[]>([]);
 
   async function removeWishlistProduct(id: string) {
     try {
