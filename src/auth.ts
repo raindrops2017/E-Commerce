@@ -4,7 +4,7 @@ import { jwtDecode } from "jwt-decode"
 
 interface DecodedToken {
   id?: string
-  [key: string]: any
+  [key: string]: unknown
 }
 
 export const authOptions: NextAuthOptions = {
