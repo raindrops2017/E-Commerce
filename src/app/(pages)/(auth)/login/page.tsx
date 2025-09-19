@@ -92,7 +92,7 @@ export default function LoginPage() {
               )}
             />
             <Button className="bg-purple-300 hover:bg-purple-400 mb-3" type="submit">Submit</Button>
-            <p>You haven't an accout <Link href={'/register'} className="text-purple-700">Register</Link> now </p>
+            <p>You do not an accout <Link href={'/register'} className="text-purple-700">Register</Link> now </p>
           </form>
         </Form>
       </div>
